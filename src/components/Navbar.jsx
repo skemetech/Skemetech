@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 // 1. ADD THIS IMPORT
-import { Link } from 'react-router-dom';
+// Remove the react-router-dom Link import entirely
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
@@ -18,12 +18,12 @@ const Navbar = () => {
   }, []);
 
 const navLinks = [
-  { name: 'Home', href: '/#top' },
-  { name: 'Services', href: '/#services' }, // Stays as a hash (scrolls on home page)
-  { name: 'About', href: '/#about' },       // Stays as a hash
-  { name: 'Projects', href: '/projects' },  // Changed to a clean Page Route
-  { name: 'Careers', href: '/careers' },    // Clean Page Route
-  { name: 'Contact', href: '/contact' },    // Changed to a clean Page Route
+  { name: 'Home', href: '/#top' }, // <-- Make sure this comma is here!
+  { name: 'Services', href: '/#services' },
+  { name: 'About', href: '/#about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Careers', href: '/careers' },
+  { name: 'Contact', href: '/contact' },
 ];
 
   return (
