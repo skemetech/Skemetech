@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import teamImg from '../assets/team.png';
+import teamImg from '../assets/Team.png';
 
 const CountUp = ({ to, suffix = "" }) => {
   const count = useMotionValue(0);
