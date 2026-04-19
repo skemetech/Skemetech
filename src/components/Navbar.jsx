@@ -60,9 +60,11 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
+          <Link to="/Contact">
           <button className="btn-primary">
             Book a Consultation
           </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
