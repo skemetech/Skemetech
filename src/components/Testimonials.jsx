@@ -2,22 +2,22 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Sarah Jenkins',
-    role: 'CEO, InnovateX',
+    name: 'Fr. Anoop Kurian',
+    role: 'Director, Christ College',
     quote: 'Skeme Tech transformed our legacy systems into a modern SaaS powerhouse. Their attention to detail and engineering excellence is unmatched.',
-    avatar: 'https://i.pravatar.cc/150?u=sarah',
+
   },
   {
-    name: 'Dr. Arvin Kumar',
-    role: 'Director, HealthBotics',
-    quote: 'The AI solutions provided by Skeme Tech have revolutionized our patient diagnostic workflow. Truly a forward-thinking partner.',
-    avatar: 'https://i.pravatar.cc/150?u=arvin',
+    name: 'Mr. Varghees',
+    role: 'Vasant Construction',
+    quote: 'Skeme Tech built a professional website for a construction company is all about establishing trust, durability, and precision.',
+
   },
   {
-    name: 'Michael Chen',
-    role: 'Founder, Bloom Mart',
+    name: 'Nayandev VS',
+    role: 'Manager, Thilakkam Group',
     quote: 'Our e-commerce platform performance tripled after the migration. The team is professional, fast, and highly skilled.',
-    avatar: 'https://i.pravatar.cc/150?u=michael',
+
   },
 ];
 
