@@ -13,19 +13,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # This silences the deprecation warning by opting into the new runner behavior
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22 # Updated to latest LTS
-          cache: 'npm'     # Adds caching to make builds faster
+          node-version: 22 # Use the current stable LTS
+          cache: 'npm'
 
-      - run: npm ci        # 'npm ci' is cleaner for CI/CD than 'npm install'
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Build project
+        # If this fails, look at the logs ABOVE the "Exit Code 1"
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
