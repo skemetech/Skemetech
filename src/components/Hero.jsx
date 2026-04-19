@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import DotBackground from './DotBackground';
+import { Link } from 'react-router-dom';
 
 const popVariant = {
   hidden: { opacity: 0, scale: 0.8, y: 20 },
