@@ -72,10 +72,12 @@ const Hero = ({ isLoading }) => {
           </motion.p>
 
           <motion.div variants={popVariant} className="flex flex-wrap gap-4 justify-start md:justify-center w-full">
+            <Link to="/projects">
             <button className="btn-primary group">
               View Our Work
               <HiArrowNarrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
+            </Link>
             <button className="btn-secondary">
               Get in Touch
             </button>
