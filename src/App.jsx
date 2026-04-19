@@ -52,6 +52,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isLoading={isLoading} />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
