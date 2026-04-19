@@ -41,7 +41,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/Skemetech">
+    <BrowserRouter>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader key="preloader" />}
       </AnimatePresence>
