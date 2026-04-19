@@ -47,7 +47,7 @@ const Preloader = () => {
           className="relative z-10 mb-8"
         >
           <img 
-            src="/logo.png" 
+            src={`${import.meta.env.BASE_URL}logo.png`} 
             alt="Logo" 
             className="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-[0_0_20px_rgba(59,125,221,0.5)]"
           />
