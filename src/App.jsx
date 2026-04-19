@@ -50,10 +50,13 @@ function App() {
         <Navbar />
         <div className="flex-grow">
           <Routes>
+            {/* Main Landing Page (Contains Services, About, Projects, and Contact) */}
             <Route path="/" element={<Home isLoading={isLoading} />} />
+            
+            {/* Separate Dedicated Pages */}
             <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects isLoading={isLoading} />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
