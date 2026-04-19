@@ -16,14 +16,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/#services' },
-    { name: 'About', href: '/#about' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Contact', href: '/#contact' },
-  ];
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/#services' }, // Stays as a hash (scrolls on home page)
+  { name: 'About', href: '/#about' },       // Stays as a hash
+  { name: 'Projects', href: '/projects' },  // Changed to a clean Page Route
+  { name: 'Careers', href: '/careers' },    // Clean Page Route
+  { name: 'Contact', href: '/contact' },    // Changed to a clean Page Route
+];
 
   return (
     <nav 
