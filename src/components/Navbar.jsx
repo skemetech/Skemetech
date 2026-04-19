@@ -38,8 +38,8 @@ const Navbar = () => {
         {/* 2. CHANGE <a> TO <Link> and href TO to */}
         <Link to="/" className="flex items-center gap-3 group cursor-pointer">
           <img 
-            src={`${import.meta.env.BASE_URL}logo.png`}
-            alt="SkemeTech Logo" 
+            src={`${import.meta.env.BASE_URL}logo.png`} 
+            alt="SkemeTech Logo"
             className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(59,125,221,0.4)]"
           />
           <span className="text-2xl font-bold tracking-tight text-white">
