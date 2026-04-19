@@ -78,9 +78,11 @@ const Hero = ({ isLoading }) => {
               <HiArrowNarrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
             </Link>
+            <Link to="/contact">
             <button className="btn-secondary">
               Get in Touch
             </button>
+            </Link>
           </motion.div>
 
           {/* Trust Indicators */}
