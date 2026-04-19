@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
 const navLinks = [
-  { name: 'Home', href: '/#top' }, // <-- Make sure this comma is here!
+  { name: 'Home', href: '/#top' }, // Added comma here
   { name: 'Services', href: '/#services' },
   { name: 'About', href: '/#about' },
   { name: 'Projects', href: '/projects' },
@@ -50,17 +50,18 @@ const navLinks = [
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            /* 3. CHANGE <a> TO <Link> and href TO to */
-            <Link
-              key={link.name}
-              to={link.href}
-              className="text-gray-300 hover:text-brand-blue font-medium transition-colors duration-300 relative group"
-            >
-              {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          ))}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                smooth // <--- ADD THIS HERE
+                className="text-gray-300 hover:text-brand-blue font-medium transition-colors duration-300 relative group"
+              >
+                {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            ))}
           <Link to="/contact">
           <button className="btn-primary">
             Book a Consultation
