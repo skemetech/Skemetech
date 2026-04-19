@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
 const navLinks = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '/#top' }
   { name: 'Services', href: '/#services' }, // Stays as a hash (scrolls on home page)
   { name: 'About', href: '/#about' },       // Stays as a hash
   { name: 'Projects', href: '/projects' },  // Changed to a clean Page Route
